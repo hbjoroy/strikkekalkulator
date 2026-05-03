@@ -1,0 +1,4 @@
+# Haskell build artifacts and temp files
+dist/
+# cabal build directory
+dist-newstyle/

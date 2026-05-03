@@ -1,0 +1,50 @@
+/* Apply consistent box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Global defaults */
+:root {
+  font: 18px sans-serif;
+  --cream-bg: #fff9e6; /* soft creamy yellow-white */
+}
+
+/* Page layout */
+body {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding: 1em;
+  background-color: var(--cream-bg);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Textareas */
+textarea {
+  resize: vertical;
+  width: 100%;
+  padding: 0.5em;
+  font: inherit;
+}
+
+input {
+  padding: 6px 8px;
+  margin: 8px 0;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: block;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex; 
+  gap: 2rem;
+}
+
+
