@@ -15,7 +15,7 @@ jobs:
         working-directory: inf221-project-main
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Haskell
         uses: haskell-actions/setup@v2
@@ -24,7 +24,7 @@ jobs:
           cabal-version: "latest"
 
       - name: Cache cabal store
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cabal/store
           key: ${{ runner.os }}-cabal-${{ hashFiles('inf221-project-main/project.cabal') }}
